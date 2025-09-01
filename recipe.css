@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff7f0;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+
+padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea, input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background-color: #ff914d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.recipe-card {
+  background: #fff3e6;
+  padding: 10px;
+  margin: 10px 0;
+}
+.delete-btn {
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
