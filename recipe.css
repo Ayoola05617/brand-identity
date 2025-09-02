@@ -13,7 +13,78 @@ body {
 padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.search-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+      gap: 10px;
+      padding: 0 1rem;
+    }
 
+    input[type="text"] {
+      padding: 0.7rem;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 0.7rem 1rem;
+      background-color: gold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 1rem;
+    }
+
+    .recipe-card {
+      background: white;
+
+border-radius: 10px;
+      padding: 1rem;
+      width: 280px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card:hover {
+      transform: scale(1.02);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .recipe-card h3 {
+      margin: 0.5rem 0;
+    }
+
+    .recipe-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #1a1a1a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      input[type="text"] {
+        width: 200px;
+      }
+
+      .recipe-card {
+        width: 90%;
+      }
+    }
 textarea, input {
   width: 100%;
   margin: 10px 0;
